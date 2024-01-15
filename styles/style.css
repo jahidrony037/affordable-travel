@@ -183,6 +183,73 @@ ul > li > a,
 
 /* banner style end */
 
+/* popular tour style start */
+.popular-tour-section {
+  width: 81.5%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.popular-tour-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+.popular-tour-info,
+.popular-tour-image {
+  width: 48%;
+
+  /* border: 2px solid black; */
+}
+
+.popular-tour-title {
+  color: #131318;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.popular-tour-description {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 1rem;
+  font-weight: 400;
+  padding-top: 24px;
+  padding-bottom: 8px;
+}
+.tour-list-container {
+  padding-left: 16px;
+}
+
+.tour-list-container ul > li {
+  list-style-type: disc;
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 1rem;
+  font-weight: 400;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.read-more-btn {
+  width: 38%;
+  border-radius: 8px;
+  background: #ff5400;
+  padding: 14px 35px;
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-align: center;
+  cursor: pointer;
+  color: #ffffff;
+  margin-top: 16px;
+}
+.popular-tour-image {
+  text-align: right;
+}
+
+.mountain-image-container img {
+  width: 100%;
+  object-fit: cover;
+}
+/* popular tour style end */
+
 @media screen and (max-width: 600px) {
   .menu-container {
     display: none;
@@ -228,5 +295,27 @@ ul > li > a,
   .input-btn {
     width: 255px;
     text-align: center;
+  }
+
+  .popular-tour-section {
+    margin: 0 auto;
+    margin-top: 24px;
+  }
+
+  .popular-tour-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .popular-tour-title {
+    font-size: 1.25rem;
+  }
+  .popular-tour-image,
+  .popular-tour-info {
+    width: 100%;
+  }
+
+  .read-more-btn {
+    width: 174px;
+    font-size: 1rem;
   }
 }
