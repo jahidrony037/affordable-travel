@@ -250,6 +250,125 @@ ul > li > a,
 }
 /* popular tour style end */
 
+/* destination style start */
+.destination-section {
+  width: 81.5%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.destination-title {
+  color: #131318;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.destination-description {
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 24px;
+  margin-bottom: 48px;
+  width: 44%;
+}
+.first-row,
+.second-row,
+.third-row {
+  display: flex;
+  gap: 24px;
+}
+.first-row {
+  margin-top: 30px;
+}
+.second-row,
+.third-row {
+  margin-top: 24px;
+}
+
+.first-box,
+.second-box,
+.third-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-box {
+  /* border: 2px solid black; */
+  flex-grow: 1;
+  height: 300px;
+  width: 573px;
+  border-radius: 8px;
+}
+.second-box {
+  /* border: 2px solid black; */
+  flex-grow: 1;
+  height: 286px;
+  width: 274px;
+  border-radius: 8px;
+}
+
+.third-box {
+  /* border: 2px solid black; */
+  flex-grow: 1;
+  border-radius: 8px;
+  width: 473px;
+  height: 300px;
+}
+
+.item-1 {
+  flex-grow: 1;
+  background-image: url("../Images/maldives.png");
+}
+.item-2 {
+  flex-grow: 1;
+  background-image: url("../Images/indonesia.png");
+}
+.tem-3 {
+  flex-grow: 1.5;
+  background-image: url("../Images/srilanka.png");
+}
+.item-4 {
+  flex-grow: 2.2;
+  background-image: url("../Images/north-america.png");
+}
+.item-5 {
+  flex-grow: 0.5;
+  background-image: url("../Images/kashmir.png");
+}
+.item-6 {
+  flex-grow: 1;
+  background-image: url("../Images/bangladesh.png");
+}
+.item-7 {
+  flex-grow: 2;
+  background-image: url("../Images/bandarban.png");
+}
+
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5,
+.item-6,
+.item-7 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.country {
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+}
+/* destination style end */
+
 @media screen and (max-width: 600px) {
   .menu-container {
     display: none;
@@ -317,5 +436,28 @@ ul > li > a,
   .read-more-btn {
     width: 174px;
     font-size: 1rem;
+  }
+
+  .destination-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .first-row,
+  .second-row,
+  .third-row {
+    flex-direction: column;
+  }
+  .item-1,
+  .item-2,
+  .item-3,
+  .item-4,
+  .item-5,
+  .item-6,
+  .item-7 {
+    flex-grow: 1;
+    width: 100%;
+    border-radius: 16px;
   }
 }
