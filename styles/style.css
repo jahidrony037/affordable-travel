@@ -87,7 +87,7 @@ ul > li > a,
 /* banner style start */
 
 .banner-container {
-  width: 81.5%;
+  max-width: 81.5%;
   margin: 0 auto;
   height: 500px;
   display: flex;
@@ -185,7 +185,7 @@ ul > li > a,
 
 /* popular tour style start */
 .popular-tour-section {
-  width: 81.5%;
+  max-width: 81.5%;
   margin: 0 auto;
   margin-top: 100px;
 }
@@ -252,19 +252,21 @@ ul > li > a,
 
 /* destination style start */
 .destination-section {
-  width: 81.5%;
+  max-width: 81.5%;
   margin: 0 auto;
   margin-top: 100px;
 }
 
-.destination-title {
+.destination-title,
+.chosen-title {
   color: #131318;
   text-align: center;
   font-size: 2.5rem;
   font-weight: 800;
 }
 
-.destination-description {
+.destination-description,
+.chosen-description {
   color: rgba(19, 19, 24, 0.7);
   text-align: center;
   margin: 0 auto;
@@ -369,6 +371,55 @@ ul > li > a,
 }
 /* destination style end */
 
+/* chosen style start */
+.chosen-section {
+  max-width: 81.5%;
+  /* border: 2px solid black; */
+  min-height: 400px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.chosen-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.chosen-card {
+  /* border: 2px solid green; */
+  flex-basis: 573px;
+  height: 284px;
+  padding-left: 32px;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+.s-bg {
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+}
+.d-bg {
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+.hotel-title {
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.hotel-description {
+  color: #5a5a5d;
+  font-size: 1rem;
+  font-weight: 400;
+}
+/* chosen style end */
+
 @media screen and (max-width: 600px) {
   .menu-container {
     display: none;
@@ -459,5 +510,12 @@ ul > li > a,
     flex-grow: 1;
     width: 100%;
     border-radius: 16px;
+  }
+  .chosen-title {
+    font-size: 1.25rem;
+  }
+  .chosen-description {
+    font-size: 0.87rem;
+    max-width: 309px;
   }
 }
