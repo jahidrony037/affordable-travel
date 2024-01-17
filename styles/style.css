@@ -545,6 +545,20 @@ ul > li > a,
   margin-left: 0;
 }
 
+overlay {
+  z-index: 1;
+}
+
+.overlay h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px; /* 150% */
+  transform: translateY(-194px);
+  z-index: 1;
+}
+
 .place-title {
   color: #131318;
   font-size: 40px;
@@ -696,7 +710,6 @@ footer {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px; /* 162.5% */
 }
 
 .social-icons {
@@ -871,6 +884,15 @@ footer {
 
   .hotel-description {
     padding-bottom: 5px;
+  }
+
+  .overlay h2 {
+    font-size: 1.2rem;
+    transform: translateY(-138px);
+  }
+
+  .news-letter-section {
+    margin-top: 24px;
   }
 
   .news-letter-container {
