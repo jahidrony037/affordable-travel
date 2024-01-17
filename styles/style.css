@@ -717,6 +717,7 @@ footer {
   height: 1px;
   width: 60%;
   background: rgba(19, 19, 24, 0.1);
+  margin-bottom: 50px;
 }
 .copyright {
   color: #131318;
@@ -905,11 +906,15 @@ footer {
     width: 33px;
     height: 28px;
   }
+  .social-icons {
+    margin-bottom: 30px;
+  }
   .footer-description {
     margin-top: 10px;
     width: 100%;
   }
   .footer-hr {
     width: 100%;
+    margin-bottom: 20px;
   }
 }
